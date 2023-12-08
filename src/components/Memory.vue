@@ -1,5 +1,5 @@
 <script setup>
-const tableauImg = ["/public/images/Paw-Patrol-Logo.png", ""]
+const tableauImg = ["/public/images/Paw-Patrol-Logo.png", "chase.png", ever]
 function createTab(largeur, hauteur, tableauImg) {
 
 for (let x = 0;x<hauteur;x++){
@@ -18,8 +18,8 @@ function createCard(image) {
   <main>
     <h2>Memory game grid</h2>
     <ul>
-      <li v-for="image in tableauImg" :key="">
-        <diimageIndexv>
+      <li v-for="(image, imageIndex) in tableauImg" :key="imageIndex">
+        <div>
         <img :src="image">
       </div>
       </li>
